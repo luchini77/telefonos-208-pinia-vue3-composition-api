@@ -6,4 +6,7 @@ import { createPinia } from 'pinia'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 
-createApp(App).use(router).use(createPinia()).mount('#app')
+import VueSweetalert2 from 'vue-sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
+
+createApp(App).use(router).use(createPinia()).use(VueSweetalert2).mount('#app')

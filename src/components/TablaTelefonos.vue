@@ -53,6 +53,7 @@ import { onMounted, computed } from 'vue';
 import { useUserStore } from '../stores/auth';
 import { useFonoStore } from '../stores/telefono';
 import router from '../router'
+import Swal from 'sweetalert2'
 
 const store = useUserStore()
 
@@ -67,7 +68,24 @@ onMounted(() => {
 })
 
 const borrar = (id) => {
-    storeFono.deleteTelefono(id)
+    Swal.fire({
+        title: "Seguro que desea Eliminar?",
+        text: "¿Este Telefono?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: "Sí, eliminar",
+        cancelButtonText: "Cancelar",
+    })
+    .then(resultado => {
+        if (resultado.value) {
+            // Hicieron click en "Sí"
+            storeFono.deleteTelefono(id)
+        } else {
+            // Dijeron que no
+            console.log("*NO se elimina la venta*");
+        }
+    })
+    
 }
 
 const buscar = (id) => {

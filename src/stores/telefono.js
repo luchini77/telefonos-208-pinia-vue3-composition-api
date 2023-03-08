@@ -58,6 +58,7 @@ export const useFonoStore = defineStore('fono', {
                     method: 'DELETE'
                 })
                 this.telefonos = this.telefonos.filter(item => item.id !== id)
+
                 router.push("/admin")
             } catch (error) {
                 console.log(error)

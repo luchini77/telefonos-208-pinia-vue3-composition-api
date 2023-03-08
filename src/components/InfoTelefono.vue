@@ -1,6 +1,6 @@
 <template>
     <h1>Informacion del Telefono:</h1>
-    <div class="card py-1">
+    <div class="card py-2">
         <div class="card-header">
             Nivel: {{ storeFono.telefono.nivel }}
         </div>
