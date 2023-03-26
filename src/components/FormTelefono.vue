@@ -2,7 +2,7 @@
     <div>
         <h1 class="py-2">Telefono:</h1>
         <div class="mb-3">
-            <input class="form-control" type="text" placeholder="Ingrese Nivel" v-model="telefono.nivel">
+            <input autofocus class="form-control" type="text" placeholder="Ingrese Nivel" v-model="telefono.nivel">
         </div>
         <div class="mb-3">
             <input class="form-control" type="text" placeholder="Ingrese Ubicación" v-model="telefono.ubicacion">
@@ -28,7 +28,6 @@
             <button
                 type="submit"
                 class="my-3 btn btn-primary w-100" 
-
             >
                 Procesar Información
             </button>
@@ -37,19 +36,9 @@
 </template>
 
 <script setup>
-import { computed, defineProps } from 'vue'
 
 const props = defineProps({
     telefono: Object
 })
-
-// const bloquear = computed(() => {
-//     return telefono.telefono.value.nivel.trim() === "" ||
-//     telefono.value.ubicacion.trim() === "" ||
-//     telefono.value.telefono.trim() === "" ||
-//     telefono.value.numero_telefono.trim() === ""
-//      ? true 
-//      : false
-// })
 
 </script>

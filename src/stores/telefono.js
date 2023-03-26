@@ -6,7 +6,9 @@ import { useUserStore } from './auth'
 export const useFonoStore = defineStore('fono', {
     state: () => ({
         telefonos: [],
-        telefono: []
+        telefono: [],
+        telefonosFiltrados: [],
+
     }),
 
     getters: {
@@ -101,6 +103,13 @@ export const useFonoStore = defineStore('fono', {
             } catch (error) {
                 console.log(error)
             }
+        },
+
+        filtrarNivel(nivel){
+            const filtro = this.telefonos.filter(telefono => {
+                return telefono.nivel.includes(nivel)
+            })
+            this.telefonosFiltrados = filtro
         }
 
     }
