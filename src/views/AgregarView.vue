@@ -2,7 +2,7 @@
     <div class="container py-3">
         <h1>Agregar telefono</h1>
         <form @submit.prevent="agregarTelefono">
-            <FormTelefono :telefono="telefono"/>
+            <FormTelefono :telefono="telefono" />
         </form>
     </div>
 </template>

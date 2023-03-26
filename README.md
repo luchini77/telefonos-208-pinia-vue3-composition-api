@@ -1,6 +1,6 @@
 # Vue 3 + Vite
 
-Primera mejora, para mejorar su funcionamiento
+Se sigue mejorando el proyecto, se puede mas... 
 
 ## Recommended IDE Setup
 
