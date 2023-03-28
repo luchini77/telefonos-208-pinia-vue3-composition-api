@@ -14,7 +14,7 @@
                     : telefono.estado === 'incompleto'
                         ? 'list-group-item-warning'
                         : 'list-group-item-danger'">
-                    Ubicación: {{ telefono.ubicacion }} - {{ telefono.nivel }}
+                    {{ telefono.telefono }} - Ubicación: {{ telefono.ubicacion }}
 
                     <div>
                         <router-link v-if="!store.userData" class="btn btn-info btn-sm" :to="`/${telefono.id}`">
