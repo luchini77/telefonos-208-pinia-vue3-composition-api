@@ -1,6 +1,6 @@
 # Vue 3 + Vite
 
-Se sigue mejorando el proyecto, se puede mas... 
+Se mejoro la estetica, para una mejor forma de ver...pero falta!
 
 ## Recommended IDE Setup
 

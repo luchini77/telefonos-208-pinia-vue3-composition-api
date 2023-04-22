@@ -106,11 +106,17 @@ export const useFonoStore = defineStore('fono', {
         },
 
         filtrarNivel(nivel){
-            const filtro = this.telefonos.filter(telefono => {
-                return telefono.nivel.includes(nivel)
-            })
+            const filtro = this.telefonos.filter(telefono => telefono.nivel === nivel);
             this.telefonosFiltrados = filtro
         }
+
+
+        // filtrarNivel(nivel){
+        //     const filtro = this.telefonos.filter(telefono => {
+        //         return telefono.nivel.includes(nivel)
+        //     })
+        //     this.telefonosFiltrados = filtro
+        // }
 
     }
 

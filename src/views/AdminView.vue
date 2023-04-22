@@ -1,10 +1,10 @@
 <template>
     <div class="container py-1">
-        <TablaTelefonos />
+        <CardTelefonos />
     </div>
 </template>
 
 <script setup>
-import TablaTelefonos from '../components/TablaTelefonos.vue';
+import CardTelefonos from '../components/CardTelefonos.vue';
 
 </script>

@@ -8,7 +8,7 @@
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
             </ul> -->
-            <p class="text-center text-body-secondary">© 2023 TyM, Instrumentación.</p>
+            <p class="text-center text-body-secondary text-white">© 2023 TyM, Instrumentación.</p>
         </footer>
     </div>
 </template>
