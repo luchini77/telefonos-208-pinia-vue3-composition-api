@@ -159,7 +159,6 @@ const storeFono = useFonoStore()
 const { telefonos } = storeToRefs(storeFono)
 
 const filtro = (nivel) => telefonos.value.filter(telefono => telefono.nivel === nivel)
-console.log(filtro)
 
 onMounted(async () => {
     await storeFono.cargarTelefonos()
