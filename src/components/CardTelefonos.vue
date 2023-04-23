@@ -3,7 +3,7 @@
 
     <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
-            <div class="card">
+            <div class="card border-primary">
                 <div class="card-body text-center bg-primary text-white"><h5>UCL</h5></div>
                 <ul class="list-group list-group-flush" v-for="telefono in filtro('UCL')" :key="telefono.id">
                     <li 
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card border-primary">
                 <div class="card-body text-center bg-primary text-white"><h5>PRODUCCIÓN</h5></div>
                 <ul class="list-group list-group-flush" v-for="telefono in filtro('PRODUCCION')" :key="telefono.id">
                     <li 
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card border-primary">
                 <div class="card-body text-center bg-primary text-white"><h5>ACARREO</h5></div>
                 <ul class="list-group list-group-flush" v-for="telefono in filtro('ACARREO')" :key="telefono.id">
                     <li 
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card">
+            <div class="card border-primary">
                 <div class="card-body text-center bg-primary text-white"><h5>SUB NIVEL</h5></div>
                 <ul class="list-group list-group-flush" v-for="telefono in filtro('SNV')" :key="telefono.id">
                     <li 

@@ -15,7 +15,7 @@
                     </li>
                 </ul>
                 <div>
-                    <button v-if="!store.userData" type="button" class="btn btn-outline-primary mx-2" data-bs-toggle="modal"
+                    <button v-if="!store.userData" type="button" class="btn btn-outline-success mx-2" data-bs-toggle="modal"
                         data-bs-target="#login">
                         <span class="material-symbols-outlined">
                             login

@@ -15,8 +15,17 @@ import Footer from './components/Footer.vue'
 
 <style>
 .background {
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 20%, rgba(0,212,255,1) 89%); 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(4, 78, 157);
+    background: linear-gradient(
+        0deg,
+        rgba(4, 78, 157, 1) 0%,
+        rgba(0, 174, 255, 1) 100%
+    );
 }
     
 </style>
